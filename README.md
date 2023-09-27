@@ -1,1 +1,0 @@
-# smoreda1
