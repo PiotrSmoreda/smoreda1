@@ -17,15 +17,15 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Pobranie liczby wierszy i kolumn
+
   $rows = isset($_POST["rows"]) ? (int)$_POST["rows"] : 0;
   $columns = isset($_POST["columns"]) ? (int)$_POST["columns"] : 0;
 
-  // Sprawdzenie czy podano poprawne liczby
+ 
   if ($rows <= 0 || $columns <= 0) {
     echo "Podaj poprawną liczbę wierszy i kolumn.";
   } else {
-    // Generowanie tabeli HTML
+  
     echo "<table border='1'>";
     for ($i = 1; $i <= $rows; $i++) {
       echo "<tr>";
