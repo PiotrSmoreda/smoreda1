@@ -26,12 +26,11 @@ function czyLiczbaPierwsza($liczba) {
     return true;
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Pobierz wartości liczb z formularza
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
     $liczbaPierwsza = $_POST['liczba_pierwsza'];
     $liczbaDruga = $_POST['liczba_druga'];
 
-    // Sprawdź, czy liczba pierwsza jest podzielna przez drugą liczbę
+  
     if (czyLiczbaPierwsza($liczbaPierwsza) && $liczbaPierwsza % $liczbaDruga === 0) {
         echo "Liczba pierwsza {$liczbaPierwsza} jest podzielna przez {$liczbaDruga} bez reszty.";
     } else {
