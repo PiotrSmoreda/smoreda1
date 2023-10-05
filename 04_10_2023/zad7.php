@@ -14,12 +14,10 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Pobierz wartości liczb z formularza
     $liczba1 = $_POST['liczba1'];
     $liczba2 = $_POST['liczba2'];
     $liczba3 = $_POST['liczba3'];
 
-    // Znajdź najmniejszą liczbę
     $najmniejsza = $liczba1;
 
     if ($liczba2 < $najmniejsza) {
