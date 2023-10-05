@@ -14,12 +14,9 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Pobierz wartości liczb z formularza
     $liczba1 = $_POST['liczba1'];
     $liczba2 = $_POST['liczba2'];
     $liczba3 = $_POST['liczba3'];
-
-    // Sprawdź, czy przynajmniej dwie liczby są takie same
     if ($liczba1 == $liczba2 || $liczba1 == $liczba3 || $liczba2 == $liczba3) {
         echo "Przynajmniej dwie z podanych liczb są takie same.";
     } else {
