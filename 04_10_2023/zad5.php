@@ -12,10 +12,7 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Pobierz wartość wieku z formularza
     $wiek = $_POST['wiek'];
-
-    // Sprawdź, do której kategorii wiekowej należy podany wiek
     if ($wiek < 11) {
         echo "Podany wiek {$wiek} lat oznacza, że jesteś dzieckiem.";
     } elseif ($wiek >= 11 && $wiek <= 17) {
