@@ -16,10 +16,7 @@ function czyRokPrzestepny($rok) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Pobierz wartość roku z formularza
     $rok = $_POST['rok'];
-
-    // Sprawdź, czy rok jest przestępny
     if (czyRokPrzestepny($rok)) {
         $dniWLutym = 29;
     } else {
