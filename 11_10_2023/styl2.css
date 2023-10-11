@@ -1,0 +1,36 @@
+html {
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+body {
+        margin: 0 auto;
+    padding: 0;
+        display: block;
+    width: 1004px;
+        overflow: auto;
+}
+#header {
+        width: 100%;
+        float: left;
+    background-color: #888;
+}
+#nav {
+    width: 250px;
+    float: left;
+    overflow: hidden;
+    background-color: #ccc;
+}
+#content {
+    width: 554px;
+    float: left;
+    overflow: hidden;
+    background-color: #fff;
+}
+#footer {
+    clear: both;
+    width: 100%;
+    background-color: #888;
+}
+Kod HTML:
