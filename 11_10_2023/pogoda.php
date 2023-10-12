@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="baner">
-	<img src="logo.png" alt="meteo" />
+	<img src="logo.png" alt="meteo">
 </div>
 <div id="baner2">
 	<h1>Prognoza dla Wrocławia</h1>
@@ -37,7 +37,7 @@
 		</table>
 	</div>
 	<div id="lewy">
-		<img src="obraz.jpg" alt="Polska, Wrocław" />
+	<img src="obraz.jpg" alt="Polska, Wrocław" width="200px" height="200px">
 	</div>
 	<div id="prawy">
 		<a href="kwerendy.txt">Pobierz kwerendy</a>
