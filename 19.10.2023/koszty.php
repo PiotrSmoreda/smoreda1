@@ -7,7 +7,7 @@
 <body>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $kosztBenzyny = $_POST["kosztBenzyny"];
+    $odleglosc = $_POST["kosztBenzyny"];
     $iloscKilometrow = $_POST["iloscKilometrow"];
     $srednieSpalanie = $_POST["srednieSpalanie"];
 
