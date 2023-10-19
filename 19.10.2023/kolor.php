@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (is_valid_color($tlo) && is_valid_color($tekst)) {
-        echo "<p style=\"height: 50%; width: 50%; margin: 50px 0; border: 2px dashed red; background-color: $tlo; color: $tekst;\">Twoje imię i nazwisko</p>";
+        echo "<p style=\"height: 50%; width: 50%; margin: 50px 0; border: 2px dashed red; background-color: $tlo; color: $tekst;\">Piotrek Smoreda</p>";
     } else {
         echo "Błąd: Niepoprawny format koloru!";
     }
