@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tlo = $_POST["tlo"];
     $tekst = $_POST["tekst"];
     
-    // Funkcja do sprawdzenia poprawności kolorów
+
     function is_valid_color($color) {
         return preg_match('/^#[0-9A-Fa-f]{6}$/', $color);
     }
