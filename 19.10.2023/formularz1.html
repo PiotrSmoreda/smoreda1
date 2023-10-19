@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+<head>
+    <title>Kalkulator kosztu przejazdu</title>
+</head>
+<body>
+    <form action="koszty.php" method="post">
+        <label for="kosztBenzyny">Koszt benzyny (zl/l):</label>
+        <input type="text" name="kosztBenzyny" id="kosztBenzyny" placeholder="Koszt benzyny" required><br>
+        
+        <label for="iloscKilometrow">Ilosc kilometrow:</label>
+        <input type="number" name="iloscKilometrow" id="iloscKilometrow" placeholder="Ilosc kilometrow" required><br>
+        
+        <label for="srednieSpalanie">Srednie spalanie (l/100km):</label>
+        <input type="text" name="srednieSpalanie" id="srednieSpalanie" placeholder="Srednie spalanie" required><br>
+        
+        <input type="submit" value="Oblicz koszt">
+    </form>
+</body>
+</html>
