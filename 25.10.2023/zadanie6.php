@@ -1,40 +1,40 @@
 <?php
+function isBirthday($birthdate) {
+    $today = date('Y-m-d');
+    return $today == $birthdate;
+}
 
-function isBirthday($birthday) {
-    $today = date("d-m-y");
-    return $today == $birthday;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $birthdate = $_POST['birthdate'];
+
+    setcookie('birthdate', $birthdate, time() + (3600 * 30), '/'); 
+
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    exit;
 }
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $birthday = $_POST["birthday"];  
-    if (strtotime($birthday) === false) {
-        echo "Podaj poprawną datę urodzin w formacie RRRR-MM-DD.";
-    } else {
-       
-        setcookie("birthday", $birthday, strtotime($birthday), "/");
-        echo "Data urodzin została zapisana w pliku cookie.";
+
+if (isset($_COOKIE['birthdate'])) {
+    $birthdate = $_COOKIE['birthdate'];
+
+    if (isBirthday($birthdate)) {
+        echo "Sto lat! ";
     }
-}
-if (isset($_COOKIE["birthday"])) {
-    $birthday = $_COOKIE["birthday"];
     
-    if (isBirthday($birthday)) {
-        echo "Wszystkiego najlepszego z okazji urodzin!";
-    } else {
-        echo "Twoje urodziny są w dniu: " . $birthday;
-    }
 }
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Urodziniki</title>
+    <title>Urodzinki</title>
 </head>
 <body>
+    <?php if (!isset($birthdate) || !isBirthday($birthdate)): ?>
     <form method="POST">
-        <label>Podaj datę urodzin (DD-MM-RRRR):</label>
-        <input type="text" name="birthday">
-        <input type="submit" value="Zapisz datę urodzin">
+        <label>Wprowadź swoją datę urodzin: </label>
+        <input type="date" name="birthdate" required>
+        <button type="submit">Zapisz datę</button>
     </form>
+    <?php endif; ?>
 </body>
 </html>
