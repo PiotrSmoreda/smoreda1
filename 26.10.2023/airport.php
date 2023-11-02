@@ -27,11 +27,18 @@
 				<th>STATUS</th>
 			</tr>
 			<?php
-			require('connect.php');
+			$conn = mysqli_connect(
+				'localhost',
+				'root',
+				'',
+				'egzaamin'
+				);
 
-			$qrr = mysqli_query($qrr, 'SELECT id, nr_rejsu, czas, kierunek, status_lotu from odloty ORDER BY czas desc');
+			$qrr = ('SELECT id, nr_rejsu, czas, kierunek, status_lotu from odloty ORDER BY czas desc');
 
-			while ($V = mysqli_fetch_assoc($qrr)) {
+			$res = mysqli_query($conn, $qrr);
+
+			while ($V = mysqli_fetch_assoc($res)) {
 				echo "<tr>";
 				for ($o = 0; $o <= 4; $o++) {
 					echo "<td>";
@@ -57,51 +64,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Jan Kupczyk -->
