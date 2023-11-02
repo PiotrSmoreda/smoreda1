@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
-	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Odloty samolotów</title>
-
-
-	<link rel="stylesheet" href="style6.css"> 
+    <meta charset="UTF-8">
+    <title>Odloty samolotów</title>
+    <link rel="stylesheet" href="style6.css">
 </head>
-
 <body>
-	<div class="s1">
-		<h2>Odloty z lotniska</h2>
-	</div>
-	<div class="s2"><img src="logo.png" alt="logotyp"></div>
-	<div class="main">
-		<table>
-			<tr>
-				<th>LP.</th>
-				<th>NUMER REJSU</th>
-				<th>CZAS</th>
-				<th>KIERUNEK</th>
-				<th>STATUS</th>
-			</tr>
+	<div id="baner1"><h2>Odloty z lotniska</h2></div>
+    <div id="baner2"><img src="zad6.png" width="300" height="150" alt="logotyp"></div>
+    <div id="glowny">
+        <table border: 1>
+            <tr>
+                <th>LP.</th>
+                <th>NUMER REJSU</th>
+                <th>CZAS</th>
+                <th>KIERUNEK</th>
+                <th>STATUS</th>
+            </tr>
 			<?php
-			$conn = mysqli_connect(
-				'localhost',
-				'root',
-				'',
-				'egzaamin'
-				);
-
-			$qrr = ('SELECT id, nr_rejsu, czas, kierunek, status_lotu from odloty ORDER BY czas desc');
-
-			$res = mysqli_query($conn, $qrr);
-
-			while ($V = mysqli_fetch_assoc($res)) {
-				echo "<tr>";
-				for ($o = 0; $o <= 4; $o++) {
-					echo "<td>";
-					echo $V[$o];
-					echo "</td>";
+				$polonczenie=mysqli_connect("localhost","root","","egzamin");
+				$zapytanie=mysqli_query($polonczenie,'SELECT id, nr_rejsu, czas,kierunek,status_lotu from odloty ORDER BY czas desc');
+				while($r = mysqli_fetch_array($zapytanie))
+				{
+					echo "<tr>";
+						echo "<td>";
+						echo $r[0];
+						echo "</td><td>";
+						echo $r[1];
+						echo "</td><td>";
+						echo $r[2];
+						echo "</td><td>";
+						echo $r[3];
+						echo "</td><td>";
+						echo $r[4];
+						echo "</td>";
+					echo "</tr>";
 				}
-				echo "</tr>";
+			?>
+        </table>
+    </div>
+    <div id="stopka1">
+		<a href="kw1.png">Pobierz obraz</a>
+	</div>
+    <div id="stopka2"><p>
+		<?php
+			if(isset($_COOKIE["ciasteczko"]))
+			{
+				echo "<b>Miło nam, że nas znowu odwiedziłeś</b>";
 			}
-			?>
-		</table>
-	</div>
-	<div class="pobierz">
-		<a href="samolot.png">Pobierz obraz</a>
-	</div>
-	<div id="cookie">
-		<p>
-			<?php
-			include ('cookie.php');
-			?>
-		</p>
-	</div>
-	<footer>Autor: Piotrek Smoręda</footer>
+			else
+			{
+				$name="ciasteczko";
+				$value="1";
+				$expires=time()+7200;
+				setcookie($name,$value,$expires);
+				echo "<i>Dzień dobry! sprawdź regulamin naszej strony</i>";
+			}
+		?>
+		</p></div>
+    <div id="stopka3">Autor:Piotrek Smoręda</div>
 </body>
-
 </html>
