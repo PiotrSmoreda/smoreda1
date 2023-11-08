@@ -1,0 +1,1 @@
+intstrukcja switch jest wydaniejsza i czytelniejsza od funkcji if
