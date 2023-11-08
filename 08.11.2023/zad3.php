@@ -5,10 +5,10 @@
 </head>
 <body>
     <?php
-    $liczba = -5;
-    $bezwzgledna = abs($liczba);
+    $l = -5;
+    $bezwzgledna = abs($l);
 
-    echo "Wartość bezwzględna z liczby {$liczba} wynosi: " . $bezwzgledna;
+    echo "Wartość bezwzględna z liczby {$l} wynosi: " . $bezwzgledna;
     ?>
 </body>
 </html>

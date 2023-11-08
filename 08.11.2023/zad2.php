@@ -5,10 +5,10 @@
 </head>
 <body>
     <?php
-    $liczba = 16;
-    if ($liczba >= 0) {
-        $pierwiastek = sqrt($liczba);
-        echo "Pierwiastek kwadratowy z liczby {$liczba} wynosi: " . $pierwiastek;
+    $l = 16;
+    if ($l >= 0) {
+        $pier = sqrt($l);
+        echo "Pierwiastek kwadratowy z liczby {$l wynosi: " . $pier;
     } else {
         echo "Nie można obliczyć pierwiastka z liczby ujemnej.";
     }

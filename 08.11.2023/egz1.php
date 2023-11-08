@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kantor</title>
 </head>
 <body>
     <form method="POST" action="">
-        <input type="number" name="pl" value="Podaj kwotę" required>
-        <select name="waluta">
-            <option value="euro">EUR</option> 
-            <option value="dolar">DOL</option> 
-            <option value="frank">FRA</option> 
+<input type="number" name="pl" value="Podaj kwotę" required>
+    <select name="waluta">
+        <option value="euro">EUR</option> 
+        <option value="dolar">DOL</option> 
+        <option value="frank">FRA</option> 
         </select>
-        <input type="submit" value="Przelicz">
+<input type="submit" value="Przelicz">
     </form>
     <?php
         if($_SERVER["REQUEST_METHOD"] == "POST"){

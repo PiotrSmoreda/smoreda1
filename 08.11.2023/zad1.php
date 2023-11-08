@@ -5,12 +5,12 @@
 </head>
 <body>
     <?php
-    $zmienna1 = 25;
-    $zmienna2 = 15;
-    if ($zmienna1 > $zmienna2) {
-        echo "Większa wartość to: " . $zmienna1;
+    $a = 25;
+    $b = 15;
+    if ($a > $b) {
+        echo "Większa wartość to: " . $a;
     } else {
-        echo "Większa wartość to: " . $zmienna2;
+        echo "Większa wartość to: " . $b;
     }
     ?>
 </body>
