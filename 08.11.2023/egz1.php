@@ -7,7 +7,7 @@
 </head>
 <body>
     <form method="POST" action="">
-<input type="number" name="pl" value="Podaj kwotę" required>
+<input type="number" name="pl" value="Wpisz kwotę" required>
     <select name="waluta">
         <option value="euro">EUR</option> 
         <option value="dolar">DOL</option> 
