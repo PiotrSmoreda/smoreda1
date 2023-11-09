@@ -1,5 +1,5 @@
-Zad 1 C 
-Zad 2 A 
+Zad 1 D 
+Zad 2 B 
 Zad 3 B 
-Zad 4 C
-Zad 5 A
+Zad 4 D
+Zad 5 D

@@ -6,14 +6,14 @@
     <title>zad3</title>
 </head>
 <body>
-<h2>for:</h2>
+<h1>for:</h1>
 <?php
 for ($liczba = 100; $liczba <= 120; $liczba += 5) {
     echo $liczba . ', ';
 }
 ?>
 
-<h2>do-while:</h2>
+<h1>do-while:</h1>
 <?php
 $liczba = 100;
 do {
@@ -23,7 +23,7 @@ do {
 ?>
 
 
-<h2>while:</h2>
+<h1>while:</h1>
 <?php
 $liczba = 100;
 while ($liczba <= 120) {

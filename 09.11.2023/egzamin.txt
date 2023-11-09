@@ -1,9 +1,10 @@
 Zad 1
 D
 Zad 2
- 
+ C
 Zad 3
-
+B
 Zad 4
-
+D
 Zad 5
+A
