@@ -1,0 +1,2 @@
+pętle umożliwiają powtarzalność kodu co prowadzi do bardziej efektywnego i zwiezlego programowania, ulatwiaja rowniez oblsuge operacji na zbiorach danych, dzieki petla mozna rowniez uniknac duplikowaniu kodu co ulatwia 
+utrzymanie i modyfikacje programu 
