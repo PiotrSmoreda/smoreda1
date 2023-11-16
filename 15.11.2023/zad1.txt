@@ -1,0 +1,12 @@
+Nazwa serwera baz danych
+
+1. MySQL  
+https://www.mysql.com/ Najnowsza werjsa 8.2.0    LIcenjca komercyjna Tak
+2. MS MySQL
+https://azure.microsoft.com/pl-pl/products/mysql Najnowsza werjsa 16.00   LIcenjca komercyjna Tak
+3. PostgreSQL
+https://www.postgresql.org.pl/  Najnowsza werjsa 11.22   LIcenjca komercyjna Nie
+4. MariaDB
+https://mariadb.org/ Najnowsza werjsa 11.3.0    LIcenjca komercyjna Nie
+5. SQL Lite
+https://www.sqlite.org/index.html Najnowsza werjsa 3.44.0    LIcenjca komercyjna Nie

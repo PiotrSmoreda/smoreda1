@@ -1,1 +1,10 @@
-da
+Wady:
+1. Koszty: Serwery baz danych mogą generować znaczne koszty, zarówno podczas zakupu, konserwacji, jak i utrzymania.
+2. Złożoność: Implementacja i zarządzanie bazą danych może być skomplikowane, szczególnie dla osób bez specjalistycznej wiedzy.
+3. Wymagania dotyczące zasobów: Serwery baz danych wymagają odpowiednich zasobów, zarówno pod względem mocy obliczeniowej, jak i przestrzeni dyskowej.
+
+Zalety:
+1. Bezpieczeństwo: Serwery baz danych oferują zaawansowane funkcje zabezpieczeń, takie jak autoryzacja i szyfrowanie danych.
+2. Wydajność: Optymalnie skonfigurowane serwery baz danych mogą zapewnić szybki dostęp do danych, nawet przy dużej ilości informacji.
+3. Skalowalność: Serwery baz danych umożliwiają łatwe skalowanie w zależności od potrzeb aplikacji, zarówno w pionie, jak i w poziomie.
+4. Łatwość zarządzania danymi: Bazy danych ułatwiają strukturyzację i zarządzanie danymi, co ułatwia operacje na informacjach w aplikacji internetowej.
